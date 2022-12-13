@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+}
+
+.about-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.about-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.about-top-box {
+    position: relative;
+}
+
+.about-top-text {
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
