@@ -1,7 +1,8 @@
 .modal {
     position: absolute;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    height: 609px;
+
     background-color: var(--color-white);
     border-radius: 4px;
     top: 50%;
@@ -15,6 +16,10 @@
     .backdrop.is-hidden & {
             transform: translate(-50%, -50%) scale(1.3);
         }
+        @media screen and (min-width:1200px) {
+        width: 528px;
+        min-height: 581px;        
+    }
 }
 
 .modal-close {
@@ -55,8 +60,9 @@
 }
 
 .modal-input {
-    width: 448px;
+    width: 370px;
     height: 40px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
@@ -70,11 +76,11 @@
     &:focus {
             border-color: var(--color-blue);
         }
+    @media screen and (min-width:1200px) {
+            width: 448px;
+            height: 40px;
+    }
 }
-
-
-
-
 
 .input-box {
     position: relative;
@@ -136,12 +142,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+
     letter-spacing: 0.03em;
     color: var(--color-grey);
     margin-top: 20px;
     margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }    
 }
 
 .check-text span {

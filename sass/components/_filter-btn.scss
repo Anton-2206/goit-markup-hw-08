@@ -10,6 +10,7 @@
     border-radius: 4px;
     padding: 6px 22px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         color: var(--color-white);
@@ -19,10 +20,25 @@
 }
 
 .filter-btn-list {
+
+
     display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
-
-
