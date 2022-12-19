@@ -4,8 +4,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
     margin: 0 auto;
 
@@ -25,6 +25,8 @@
     }
 
     @media screen and (min-width:1200px) {
+            padding-top: 200px;
+                padding-bottom: 200px;
         background-image: var(--gra),
             url(../images/main/background.jpg);
 
